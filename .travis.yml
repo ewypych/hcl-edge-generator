@@ -1,0 +1,10 @@
+language: python
+python:
+    - "2.7"
+    - "3.4"
+    - "3.5"
+    - "3.6"
+
+script:
+- python hcl_edge_gen.py
+- python hcl_edge_gen.py --help

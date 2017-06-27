@@ -1,0 +1,6 @@
+edge_name,descr,policy,protocol,dest_port,dest_ip,src_port,src_ip
+EDGE_01,first-rule,allow,tcp,21,any,any,10.0.1.0/24
+EDGE_01,second-rule,allow,tcp,22,any,any,10.0.2.0/24
+EDGE_01,third-rule,allow,tcp,80,50001-50010,any,10.0.3.0/24
+EDGE_01,fourth-rule,allow,tcp,24,any,any,172.16.0.5
+EDGE_01,fifth-rule,allow,tcp,25,any,any,10.0.5.0/24
