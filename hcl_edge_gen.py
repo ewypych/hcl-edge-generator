@@ -39,10 +39,11 @@ def AddDNAT(data):
         edge_name, exip, port, intip
         """
         instance.write("resource \"vcd_dnat\" \"rule" + str(row) + "\" {\n")
-        instance.write("  edge_gateway = \"" + data.get_data(1, row) + "\"\n")
-        instance.write("  external_ip  = \"" + data.get_data(2, row) + "\"\n")
-        instance.write("  port         = " + data.get_data(3, row) + "\n")
-        instance.write("  internal_ip  = \"" + data.get_data(4, row) + "\"\n\n")
+        instance.write("  edge_gateway     = \"" + data.get_data(1, row) + "\"\n")
+        instance.write("  external_ip      = \"" + data.get_data(2, row) + "\"\n")
+        instance.write("  port             = " + data.get_data(3, row) + "\n")
+        instance.write("  internal_ip      = \"" + data.get_data(4, row) + "\"\n")
+        instance.write("  translated_port  = " + data.get_data(5, row) + "\n\n")
     instance.close()
 ## end of AddDNAT
 

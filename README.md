@@ -26,9 +26,8 @@ There are three different CSV files needed by the script:
 Files can have another names (you can specify them with the script arguments), but must have the following fieldnames and order:
 
 **DNAT CSV**
-Edge_Name, External_IP, Port, Internal_IP
+Edge_Name, External_IP, Port, Internal_IP, Translated Port
 
-*Please note that now there is no option to choose different source and destination port. If Terraform have this possibility, script will be adjusted to it.*
 
 **SNAT CSV**
 Edge_Name, External_IP, Internal_IP
